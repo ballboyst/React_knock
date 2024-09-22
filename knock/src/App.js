@@ -12,10 +12,13 @@ const App = () => {
     setNumber(number - 1);
   };
   return(
-    <div class='origin'>
+    <div>
+      <h2 class="center">React Counter</h2>
+      <div class="origin"> 
       <p>{number} </p>
-      <button onClick={onClickIncrement}>"+"</button>
-      <button onClick={onClickDecrement}>"-"</button>
+      <button class="button" onClick={onClickIncrement}>"+"</button>
+      <button class="button" onClick={onClickDecrement}>"-"</button>
+      </div>
     </div>
   )
 };

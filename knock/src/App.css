@@ -1,9 +1,16 @@
+.center {
+  text-align: center;
+  margin-top: 20rem;
+}
 .origin {
   text-align: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+.button {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .App {
   text-align: center;
