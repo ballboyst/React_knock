@@ -1,9 +1,21 @@
 import './App.css';
+import {useState} from "react";
 
-function App() {
+
+
+const App = () => {
+  const [number, setNumber] = useState(0);
+  const onClickIncrement =  () => {
+    setNumber(number + 1);
+  };
+  const onClickDecrement = () => {
+    setNumber(number - 1);
+  };
   return(
     <div class='origin'>
-      <h1> Hello World</h1>
+      <p>{number} </p>
+      <button onClick={onClickIncrement}>"+"</button>
+      <button onClick={onClickDecrement}>"-"</button>
     </div>
   )
 };
